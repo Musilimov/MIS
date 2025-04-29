@@ -15,8 +15,7 @@ class UserProfileView(APIView):
     def get(self, request):
         user = request.user  # Получаем текущего аутентифицированного пользователя
         return Response({
-            "username": user.username,
-            "email": user.email,
+            "phone_number": user.phone_number,
         })
 
 # Регистрация пользователя

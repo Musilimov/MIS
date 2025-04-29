@@ -102,11 +102,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',  # имя базы данных
-        'USER': 'postgres',  # имя пользователя
-        'PASSWORD': 'postgres',  # ваш пароль
-        'HOST': 'localhost',  # сервер базы данных
-        'PORT': '5432',  # порт PostgreSQL (по умолчанию 5432)
+        'NAME': 'postgres_new',  # новое имя базы данных
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -154,3 +154,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# URL configuration
+APPEND_SLASH = False
